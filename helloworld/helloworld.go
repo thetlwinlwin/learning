@@ -2,10 +2,7 @@ package main
 
 import (
 	"fmt"
-	"math/rand"
 	"time"
-
-	"com.example/calculator"
 )
 
 func gimmenumber() int {
@@ -13,33 +10,34 @@ func gimmenumber() int {
 }
 
 func main() {
-	result := calculator.Sum(1, 3)
-	if num := result - gimmenumber(); num < 0 {
-		fmt.Println(num, "is negative")
-	} else if num < 10 {
-		fmt.Println(num, "has only one digit left")
-	} else {
-		fmt.Println(num, "has multiple digits")
-	}
-	// outside of the if scope
-	// fmt.Println(num)
+	fmt.Println("BUBU is doing it.")
+	// result := calculator.Sum(1, 3)
+	// if num := result - gimmenumber(); num < 0 {
+	// 	fmt.Println(num, "is negative")
+	// } else if num < 10 {
+	// 	fmt.Println(num, "has only one digit left")
+	// } else {
+	// 	fmt.Println(num, "has multiple digits")
+	// }
+	// // outside of the if scope
+	// // fmt.Println(num)
 
-	i := rand.Int31n(10)
+	// i := rand.Int31n(10)
 
-	switch i {
-	case 1:
-		fmt.Println("One")
-	case 2:
-		fmt.Println("Two")
-	// default is optional
-	default:
-		fmt.Println("Default")
-	}
-	fmt.Println("ok")
+	// switch i {
+	// case 1:
+	// 	fmt.Println("One")
+	// case 2:
+	// 	fmt.Println("Two")
+	// // default is optional
+	// default:
+	// 	fmt.Println("Default")
+	// }
+	// fmt.Println("ok")
 
-	region, continent := location("Irvine")
-	fmt.Printf("John works in %s, %s\n", region, continent)
-	invoker()
+	// region, continent := location("Irvine")
+	// fmt.Printf("John works in %s, %s\n", region, continent)
+	// invoker()
 
 }
 
